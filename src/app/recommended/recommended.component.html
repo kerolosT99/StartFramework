@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <div class="row">
+        @for (product of recommendedList; track $index) {
+        <div class="col-md-3">
+            <img [src]="product.pImage" class="w-100">
+            <h5 class="mt-2">Product Name: {{product.pName}}</h5>
+            <h5>Product Price: {{product.pPrice}}</h5>
+        </div>
+        }
+    </div>
+</div>

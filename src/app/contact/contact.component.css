@@ -1,0 +1,6 @@
+input:focus{
+box-shadow: none;
+}
+button{
+    width: fit-content;
+}

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: #1abc9c
+}
+
+.content-container {
+    background-color: var(--main-color);
+    height: 96vh;
+}
+.bg-main{
+    background-color: #1abc9c;
+}

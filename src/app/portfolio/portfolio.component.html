@@ -1,0 +1,21 @@
+<div class="portfolio-container vh-100 text-center p-5 m-5">
+    <app-title titleName="portfolio component"></app-title>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let img of images">
+                <div class="img-card rounded-3 overflow-hidden position-relative" (click)="openModal(img)">
+                    <img [src]="img" class="w-100" alt="">
+                    <div class="overlay-container d-flex justify-content-center align-items-center">
+                        <div class="overlay"></div>
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_img position-fixed start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center"
+        [class.d-none]="!showModal" (click)="closeModal($event)">
+        <img [src]="selectedImageUrl" class="w-25">
+    </div>
+</div>

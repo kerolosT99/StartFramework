@@ -1,0 +1,6 @@
+.gallary-container{
+    background-color: var(--main-color);
+}
+img{
+    height: 200px;
+}

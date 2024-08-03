@@ -1,0 +1,12 @@
+Nav {
+    background-color: #2C3E50;
+}
+
+.navbar {
+    padding: 25px;
+    transition: padding 0.5s ease;
+}
+
+.navbar-scrolled {
+    padding: 15px;
+}
